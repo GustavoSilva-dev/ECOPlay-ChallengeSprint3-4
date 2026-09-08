@@ -51,7 +51,7 @@ function Header() {
                         <a
                             key={item.path}
                             href={item.path}
-                            className={`whitespace-nowrap drop-shadow-lg font-['Montserrat',sans-serif] text-[1rem] font-bold text-white no-underline transition-[color,font-size] duration-500 hover:text-amber-200  hover:text-[1.1rem] ${item.active ? 'text-amber-200' : ''}`}
+                            className={`whitespace-nowrap drop-shadow-lg font-['Montserrat',sans-serif] text-[1rem] font-bold text-white no-underline transition-[color,font-size] duration-200 hover:text-indigo-300 hover:scale(1.1) ${item.active ? 'text-indigo-300' : ''}`}
                             onClick={(event) => {
                                 event.preventDefault()
                                 handleNavigation(item.path)
