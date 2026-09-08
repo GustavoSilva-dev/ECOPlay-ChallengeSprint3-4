@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
 
+interface headerProps {
+    activePage?: string
+}
+
 const navigationItems = [
     { label: 'Página Inicial', path: '/' },
     { label: 'Sobre', path: '/sobre' },
@@ -11,7 +15,7 @@ const navigationItems = [
     { label: 'FAQ', path: '/faq', active: true },
 ]
 
-function Header() {
+function Header({ activePage }: headerProps) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     const navigate = useNavigate()
 
@@ -46,12 +50,12 @@ function Header() {
                 >
                     <span aria-hidden="true">&#9776;</span>
                 </button>
-                <nav className="hidden items-center gap-5 min-[921px]:flex" aria-label="Navegação principal">
+                <nav className="hidden items-center gap-3 min-[921px]:flex" aria-label="Navegação principal">
                     {navigationItems.map((item) => (
                         <a
                             key={item.path}
                             href={item.path}
-                            className={`whitespace-nowrap drop-shadow-lg font-['Montserrat',sans-serif] text-[1rem] font-bold text-white no-underline transition-[color,font-size] duration-200 hover:text-indigo-300 hover:scale(1.1) ${item.active ? 'text-indigo-300' : ''}`}
+                            className={`whitespace-nowrap drop-shadow-lg font-['Montserrat',sans-serif] text-[1rem] text-white no-underline transition-all duration-300 hover:bg-[#6B46C1] pl-2 rounded-lg pr-2 ${activePage === item.label ? 'bg-[#6B46C1] font-bold' : 'font-semibold'}`}
                             onClick={(event) => {
                                 event.preventDefault()
                                 handleNavigation(item.path)
