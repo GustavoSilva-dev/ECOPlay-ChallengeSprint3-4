@@ -1,0 +1,88 @@
+import { useState } from 'react'
+import { useNavigate } from 'react-router'
+
+const navigationItems = [
+    { label: 'Página Inicial', path: '/' },
+    { label: 'Sobre', path: '/sobre' },
+    { label: 'Quem Somos?', path: '/quem-somos' },
+    { label: 'A Solução', path: '/solucao' },
+    { label: 'Fluxograma', path: '/fluxograma' },
+    { label: 'Contato', path: '/contato' },
+    { label: 'FAQ', path: '/faq', active: true },
+]
+
+function Header() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+    const navigate = useNavigate()
+
+    const handleNavigation = (path: string, closeMobileMenu = false) => {
+        navigate(path)
+
+        if (closeMobileMenu) {
+            setIsMobileMenuOpen(false)
+        }
+    }
+
+    return (
+        <header className="fixed inset-x-0 top-0 z-1000 border-b-[3px] border-[#D9D9D9] bg-linear-to-r from-[#5360FF] to-[#202658] px-2.5 py-2.5">
+            <div className="relative z-10 mx-auto flex max-w-[90vw] items-center justify-between gap-3.75">
+                <a
+                    href="/"
+                    className="animate-[logo-nav-animation_1s_ease-in-out] font-['Nico_Moji',sans-serif] text-5xl leading-none text-white no-underline"
+                    aria-label="ECOPlay - Página inicial"
+                    onClick={(event) => {
+                        event.preventDefault()
+                        handleNavigation('/')
+                    }}
+                >
+                    EP
+                </a>
+                <button
+                    type="button"
+                    className="block cursor-pointer border-0 bg-transparent text-3xl leading-none text-white min-[921px]:hidden"
+                    aria-label={isMobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+                    aria-expanded={isMobileMenuOpen}
+                    onClick={() => setIsMobileMenuOpen((isOpen) => !isOpen)}
+                >
+                    <span aria-hidden="true">&#9776;</span>
+                </button>
+                <nav className="hidden items-center gap-5 min-[921px]:flex" aria-label="Navegação principal">
+                    {navigationItems.map((item) => (
+                        <a
+                            key={item.path}
+                            href={item.path}
+                            className={`whitespace-nowrap drop-shadow-lg font-['Montserrat',sans-serif] text-[1rem] font-bold text-white no-underline transition-[color,font-size] duration-500 hover:text-amber-200  hover:text-[1.1rem] ${item.active ? 'text-amber-200' : ''}`}
+                            onClick={(event) => {
+                                event.preventDefault()
+                                handleNavigation(item.path)
+                            }}
+                        >
+                            {item.label}
+                        </a>
+                    ))}
+                </nav>
+            </div>
+
+            <nav
+                className={`absolute left-0 right-0 top-15 z-0 flex w-full flex-col items-center justify-center gap-3.75 rounded-[5px] bg-linear-to-r from-[#5360FF] to-[#323A99] p-5 transition-[opacity,visibility] duration-300 min-[921px]:hidden ${isMobileMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}
+                aria-label="Navegação mobile"
+            >
+                {navigationItems.map((item) => (
+                    <a
+                        key={item.path}
+                        href={item.path}
+                        className={`font-['Montserrat',sans-serif] text-[1.2rem] font-semibold text-white/80 no-underline ${item.active ? 'font-bold text-white' : ''}`}
+                        onClick={(event) => {
+                            event.preventDefault()
+                            handleNavigation(item.path, true)
+                        }}
+                    >
+                        {item.label}
+                    </a>
+                ))}
+            </nav>
+        </header>
+    )
+}
+
+export default Header;
