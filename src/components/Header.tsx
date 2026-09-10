@@ -68,7 +68,7 @@ function Header({ activePage }: headerProps) {
             </div>
 
             <nav
-                className={`absolute left-0 right-0 top-15 z-0 flex w-full flex-col items-center justify-center gap-3.75 rounded-[5px] bg-linear-to-r from-[#5360FF] to-[#323A99] p-5 transition-[opacity,visibility] duration-300 min-[921px]:hidden ${isMobileMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}
+                className={`absolute left-0 right-0 top-15 z-0 flex w-full flex-col items-center justify-center gap-3.75 rounded-[5px] bg-linear-to-r from-[#5360FF] to-[#202658] p-5 transition-[opacity,visibility] duration-300 min-[921px]:hidden ${isMobileMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}
                 aria-label="Navegação mobile"
             >
                 {navigationItems.map((item) => (
