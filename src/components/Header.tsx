@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
+import { PiPlantFill } from "react-icons/pi";
 
 interface headerProps {
     activePage?: string
@@ -56,13 +57,13 @@ function Header({ activePage }: headerProps) {
                         <a
                             key={item.path}
                             href={item.path}
-                            className={`whitespace-nowrap drop-shadow-lg font-['Montserrat',sans-serif] text-[1rem] text-black no-underline transition-all duration-300 hover:scale-105 pl-2 rounded-lg pr-2 bg-white font-semibold`}
+                            className={`whitespace-nowrap flex items-center gap-1 drop-shadow-lg font-['Montserrat',sans-serif] text-[1rem] text-black no-underline transition-all duration-300 hover:scale-105 pl-2 rounded-lg pr-2 bg-white font-semibold`}
                             onClick={(event) => {
                                 event.preventDefault()
                                 handleNavigation(item.path)
                             }}
                         >
-                            {item.label}
+                            <PiPlantFill /> {item.label}
                         </a>) : (<a
                             key={item.path}
                             href={item.path}

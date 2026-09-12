@@ -68,10 +68,23 @@
   animation: shadow-animate 1.2s ease-in-out infinite alternate;
 }
 
+.border-image-animate {
+  animation: border-animate 0.5s linear infinite alternate;
+}
+
 .hero-title-animation {
   animation:
     content-fade-in 1s ease-in-out both,
     shadow-pulse 2s ease-out infinite;
+}
+
+@keyframes border-animate {
+  0% {
+    border: 6px solid #5360FF;
+  }
+  100% {
+    border: 6px solid #6B46C1;
+  }
 }
 
 @keyframes shadow-animate {

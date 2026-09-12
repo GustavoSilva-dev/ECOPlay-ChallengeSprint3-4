@@ -46,16 +46,16 @@ function Sobre() {
                                     O coração da solução são as Guildas. Baseadas na localização geográfica dos usuários, elas estimulam a cooperação para atingir metas coletivas de sustentabilidade.
                                 </p>
                                 <p>
-                                    Para manter o dinamismo, introduzimos os Pontos Privados (PV): missões de "corrida" dentro da própria guilda, onde quem completa o desafio primeiro garante a recompensa máxima. Isso gera um ambiente de alta interatividade através de rankings, lootboxes de bônus e evolução de elos.
+                                    Para manter o dinamismo, estruturamos um fluxo de ranking mensal entre as guildas. Motivando os usuários a competirem e 
                                 </p>
                             </Card>
 
                             <Card
-                                title="O Motor de Missões e o Comércio Parceiro"
+                                title="O Motor de Missões e o Comércio Parceiro - ECOPartner"
                                 variant="purple"
                             >
                                 <p className="mb-3.75">
-                                    Diferente de sistemas comuns, a ECOPlay integra o lojista ao jogo. Através de um plano pago, comerciantes podem anunciar missões para atrair usuários às suas lojas (como descarte de resíduos ou compra de produtos eco-friendly).
+                                    Diferente de sistemas comuns, a ECOPlay integra o lojista ao jogo. Através de um ecossistema de assinaturas (<b>ECOPartner</b>), comerciantes podem anunciar missões para atrair usuários às suas lojas (como descarte de resíduos ou compra de produtos eco-friendly).
                                 </p>
                                 <p>
                                     O grande diferencial está no Sistema de Validação Direta, o próprio comerciante certifica a ação do usuário no local. Isso garante autenticidade, gera fluxo de clientes para os parceiros e permite que as empresas conquistem Selos Sustentáveis. Ao final, os esforços dos usuários são convertidos em benefícios tangíveis, como descontos em produtos e na conta de energia através da Prospera.
