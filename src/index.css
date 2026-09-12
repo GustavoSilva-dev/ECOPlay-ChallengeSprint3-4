@@ -111,6 +111,26 @@
   }
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  0%, 100% {
+    transform: translateX(20px);
+  }
+
+  50% {
+    transform: translateX(-20px);
+  }
+}
+
 @keyframes hero-gradient {
   0%, 100% {
     background: linear-gradient(to bottom right, rgb(83 97 255 / 0.88), rgb(107 70 193 / 0.88));

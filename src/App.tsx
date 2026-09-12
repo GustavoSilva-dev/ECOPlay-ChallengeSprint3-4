@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import ErrorPage from './pages/ErrorPage'
 import QuemSomos from './pages/QuemSomos'
+import Solucao from './pages/Solucao'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/sobre" element={<Sobre />}></Route>
         <Route path="/quem-somos" element={<QuemSomos />}></Route>
+        <Route path="/solucao" element={<Solucao />}></Route>
          <Route path="/*" element={<ErrorPage />}></Route>
       </Routes>
     </BrowserRouter>

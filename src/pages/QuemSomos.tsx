@@ -7,6 +7,7 @@ import brenoImage from "../assets/imagens/breno.jpg";
 import diogoImage from "../assets/imagens/diogo.webp";
 import edilsonImage from "../assets/imagens/edilson.jpeg";
 import gustavoImage from "../assets/imagens/gustavo.jpeg";
+import NextPageButton from "../components/NextPageButton";
 
 interface Member {
     name: string;
@@ -114,6 +115,7 @@ function QuemSomos() {
                             </div>
                         </article>
                     ))}
+                    <NextPageButton page="solucao" className="self-end" />
                 </div>
             </main>
             <Footer />
