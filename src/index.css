@@ -45,28 +45,27 @@
 }
 
 .scroll-reveal-page .content-fade-in.is-visible {
-  animation: content-fade-in 1.2s ease-in-out both;
+  animation: content-fade-in 0.75s ease-out both;
 }
 
 .scroll-reveal-page .hero-title-animation.is-visible {
   animation:
-    content-fade-in 1s ease-in-out both,
+    content-fade-in 1.2s ease-in-out both,
     shadow-pulse 2s ease-out infinite;
 }
 
 .scroll-reveal-page .eyebrow-fade-in.is-visible {
   animation:
-    content-fade-in 1.2s ease-in-out both,
-    shadow-animate 1s ease-in infinite alternate;
+    content-fade-in 1.2s ease-in-out both;
 }
 
 .eyebrow-fade-in {
-  animation: content-fade-in 1.2s ease-in-out both, shadow-animate 1s ease-in infinite alternate;
+  animation: content-fade-in 1.2s ease-in-out both;
 }
 
 .shadow-animate {
-  text-shadow: 0 3px 0 rgb(107 70 193 / 0.50), 0 6px 0 rgb(107 70 193 / 0.25), 0 12px 0 rgb(107 70 193 / 0.25);
-  animation: shadow-animate 2s ease-in infinite alternate;
+  text-shadow: 0 3px 0 rgb(107 70 193 / 0.50), 0 8px 0 rgb(107 70 193 / 0.25), 0 12px 0 rgb(107 70 193 / 0.25);
+  animation: shadow-animate 1.2s ease-in-out infinite alternate;
 }
 
 .hero-title-animation {
@@ -81,11 +80,11 @@
   }
 
   25% {
-    text-shadow: 0 3px 0 rgb(83 97 255/ 0.50), 0 6px 0 rgb(83 97 255/ 0.25);
+    text-shadow: 0 3px 0 rgb(83 97 255/ 0.50), 0 8px 0 rgb(83 97 255/ 0.25);
   }
 
   50% {
-    text-shadow: 0 3px 0 rgb(83 97 255/ 0.70), 0 6px 0 rgb(83 97 255/ 0.25), 0 12px 0 rgb(83 97 255/ 0.25);
+    text-shadow: 0 3px 0 rgb(83 97 255/ 0.70), 0 8px 0 rgb(83 97 255/ 0.25), 0 12px 0 rgb(83 97 255/ 0.25);
   }
 }
 

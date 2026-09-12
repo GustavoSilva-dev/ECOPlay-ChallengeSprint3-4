@@ -19,7 +19,7 @@ function Hero({
 
     return (
         <section
-            className={`relative flex ${isInnerLayout ? 'h-100 min-h-100' : 'h-125 min-h-125 min-[769px]:h-150 min-[769px]:min-h-150'} flex-col items-center justify-center overflow-hidden bg-cover bg-center px-5 py-15 text-center text-white min-[769px]:px-30`}
+            className={`relative flex ${isInnerLayout ? 'h-100 min-h-100' : 'h-125 min-h-125 min-[769px]:h-150 min-[769px]:min-h-150'} flex-col items-center justify-center overflow-hidden bg-[#5361ff] bg-cover bg-center bg-no-repeat px-5 py-15 text-center text-white min-[769px]:px-30`}
             style={{ backgroundImage: `url(${heroBackground})` }}
             aria-labelledby="hero-title"
         >

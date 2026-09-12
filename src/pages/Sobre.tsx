@@ -2,6 +2,7 @@ import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import NextPageButton from "../components/NextPageButton";
 import useScrollReveal from "../hooks/useScrollReveal";
 
 function Sobre() {
@@ -20,10 +21,10 @@ function Sobre() {
             <main className="flex flex-1 justify-center px-5 py-20 min-[769px]:px-5">
                 <div className="flex w-full max-w-225 flex-col gap-17.5">
                     <section className="content-fade-in mx-auto w-full max-w-187.5 text-center">
-                        <h2 className="shadow-animate mb-6.25 font-['Nico_Moji',sans-serif] text-[3.5rem] font-semibold text-[#2C3952]">
+                        <h2 className="shadow-animate mb-6.25 font-['Nico_Moji',sans-serif] text-[3.75rem] font-normal text-[#2C3952]">
                             ECOPlay
                         </h2>
-                        <h3 className="mb-5 text-[1.1rem] font-bold">
+                        <h3 className="mb-5 text-[1.5rem] font-bold">
                             Uma resposta ao desafio da Soul Up
                         </h3>
                         <p className="text-[0.95rem] leading-[1.7] text-justify min-[769px]:text-[1.1rem]">
@@ -61,7 +62,9 @@ function Sobre() {
                                 </p>
                             </Card>
                         </div>
+                        <NextPageButton page="quem-somos" className="self-end" />
                     </section>
+                    
                 </div>
             </main>
             <Footer />

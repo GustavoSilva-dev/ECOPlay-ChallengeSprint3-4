@@ -22,6 +22,7 @@ function Header({ activePage }: headerProps) {
 
     const handleNavigation = (path: string, closeMobileMenu = false) => {
         navigate(path)
+        window.scrollTo(0, 0);
 
         if (closeMobileMenu) {
             setIsMobileMenuOpen(false)
@@ -37,7 +38,6 @@ function Header({ activePage }: headerProps) {
                     aria-label="ECOPlay - Página inicial"
                     onClick={(event) => {
                         event.preventDefault()
-                        handleNavigation('/')
                     }}
                 >
                     EP
@@ -52,8 +52,18 @@ function Header({ activePage }: headerProps) {
                     <span aria-hidden="true">&#9776;</span>
                 </button>
                 <nav className="hidden items-center gap-3 min-[921px]:flex" aria-label="Navegação principal">
-                    {navigationItems.map((item) => (
+                    {navigationItems.map((item) => item.label == "Protótipo" ? (
                         <a
+                            key={item.path}
+                            href={item.path}
+                            className={`whitespace-nowrap drop-shadow-lg font-['Montserrat',sans-serif] text-[1rem] text-black no-underline transition-all duration-300 hover:scale-105 pl-2 rounded-lg pr-2 bg-white font-semibold`}
+                            onClick={(event) => {
+                                event.preventDefault()
+                                handleNavigation(item.path)
+                            }}
+                        >
+                            {item.label}
+                        </a>) : (<a
                             key={item.path}
                             href={item.path}
                             className={`whitespace-nowrap drop-shadow-lg font-['Montserrat',sans-serif] text-[1rem] text-white no-underline transition-all duration-300 hover:bg-[#6B46C1] pl-2 rounded-lg pr-2 ${activePage === item.label ? 'bg-[#6B46C1] font-bold' : 'font-semibold'}`}
@@ -63,8 +73,8 @@ function Header({ activePage }: headerProps) {
                             }}
                         >
                             {item.label}
-                        </a>
-                    ))}
+                        </a>) 
+                    )}
                 </nav>
             </div>
 

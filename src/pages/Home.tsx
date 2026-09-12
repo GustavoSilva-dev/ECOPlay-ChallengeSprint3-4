@@ -32,7 +32,7 @@ function Home() {
                         <p className="mb-0 text-[0.95rem] leading-[1.6] min-[1024px]:text-[1.1rem] min-[1024px]:text-justify">
                             Mais do que um simples programa de pontos, a ECOPlay atua como um elo entre o cidadão consciente, as comunidades locais e os estabelecimentos comerciais, engajando os usuários com a economia real de comércios locais e parceiros da plataforma SoulUp.
                         </p>
-                        <NextPageButton />
+                        <NextPageButton className="mt-6"/>
                     </div>
                 </div>
             </main>
