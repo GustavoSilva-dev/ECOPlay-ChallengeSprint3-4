@@ -6,7 +6,7 @@ import ErrorPage from './pages/ErrorPage'
 import QuemSomos from './pages/QuemSomos'
 import Solucao from './pages/Solucao'
 import Fluxograma from './pages/Fluxograma'
-import FAQs from './components/FAQs'
+import FAQs from './pages/FAQs'
 
 function App() {
 

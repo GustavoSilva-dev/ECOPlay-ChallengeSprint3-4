@@ -1,7 +1,8 @@
 import { useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import Hero from "./Hero";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import NextPageButton from "../components/NextPageButton";
 
 interface FaqItem {
     question: string;
@@ -45,7 +46,7 @@ function FAQs() {
             />
 
             <main className="flex flex-1 justify-center px-5 py-15 min-[769px]:py-20">
-                <div className="flex w-full max-w-187.5 flex-col items-center gap-10">
+                <div className="content-fade-in flex w-full max-w-187.5 flex-col items-center gap-10">
                     <h2 className="shadow-animate font-['Nico_Moji',sans-serif] text-[3.75rem] font-normal text-[#2C3952] max-[480px]:text-[3rem]">
                         ECOPlay
                     </h2>
@@ -85,6 +86,7 @@ function FAQs() {
                             );
                         })}
                     </div>
+                    <NextPageButton page="prototipo" className="self-end" label="Conhecer protótipo inicial"/>
                 </div>
             </main>
             <Footer />
