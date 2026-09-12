@@ -28,7 +28,7 @@ function Card({
     return (
         <article
             {...props}
-            className={`content-fade-in w-full max-w-full self-center rounded-xl p-6.25 text-white shadow-[0_8px_24px_rgba(0,0,0,0.1)] transition-[transform,box-shadow] duration-300 min-[769px]:max-w-[85%] min-[769px]:p-7.5 ${variantClasses[variant]} ${className}`}
+            className={`content-fade-in w-full max-w-full self-center rounded-xl p-6.25 text-white shadow-[0_8px_24px_rgba(0,0,0,0.2)] transition-all min-[769px]:max-w-[85%] min-[769px]:p-7.5 ${variantClasses[variant]} ${className}`}
             style={{ ...(width !== undefined ? { width } : {}), ...(height !== undefined ? { height } : {}), ...style }}
         >
             {title && (

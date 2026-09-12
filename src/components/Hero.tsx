@@ -29,7 +29,7 @@ function Hero({
             />
             <div className={`relative z-10 ${isInnerLayout ? 'mt-16' : 'mt-12.5'}`}>
                 {eyebrow && (
-                    <p className="mb-2.5 font-['Nico_Moji',sans-serif] text-[1.5rem] tracking-[1px]">
+                    <p className="eyebrow-fade-in mb-2.5 font-['Nico_Moji',sans-serif] text-[1.5rem] tracking-[1px]">
                         {eyebrow}
                     </p>
                 )}

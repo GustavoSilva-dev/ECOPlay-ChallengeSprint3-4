@@ -13,6 +13,7 @@ const navigationItems = [
     { label: 'Fluxograma', path: '/fluxograma' },
     { label: 'Contato', path: '/contato' },
     { label: 'FAQ', path: '/faq', active: true },
+    { label: 'Protótipo', path: '/prototipo' }
 ]
 
 function Header({ activePage }: headerProps) {

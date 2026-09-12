@@ -2,10 +2,13 @@ import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 function Sobre() {
+    const pageRef = useScrollReveal<HTMLDivElement>();
+
     return (
-        <div className="flex min-h-screen flex-col bg-[#D9D9D9] font-['Montserrat',sans-serif] text-[#2C3952]">
+        <div ref={pageRef} className="scroll-reveal-page flex min-h-screen flex-col bg-[#D9D9D9] font-['Montserrat',sans-serif] text-[#2C3952]">
             <Header activePage="Sobre" />
             <Hero
                 eyebrow="ECOPlay"
@@ -17,7 +20,7 @@ function Sobre() {
             <main className="flex flex-1 justify-center px-5 py-20 min-[769px]:px-5">
                 <div className="flex w-full max-w-225 flex-col gap-17.5">
                     <section className="content-fade-in mx-auto w-full max-w-187.5 text-center">
-                        <h2 className="mb-6.25 font-['Nico_Moji',sans-serif] text-[3.5rem] text-[#2C3952]">
+                        <h2 className="shadow-animate mb-6.25 font-['Nico_Moji',sans-serif] text-[3.5rem] font-semibold text-[#2C3952]">
                             ECOPlay
                         </h2>
                         <h3 className="mb-5 text-[1.1rem] font-bold">
