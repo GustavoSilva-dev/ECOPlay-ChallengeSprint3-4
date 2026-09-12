@@ -6,6 +6,7 @@ import ErrorPage from './pages/ErrorPage'
 import QuemSomos from './pages/QuemSomos'
 import Solucao from './pages/Solucao'
 import Fluxograma from './pages/Fluxograma'
+import FAQs from './components/FAQs'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/quem-somos" element={<QuemSomos />}></Route>
         <Route path="/solucao" element={<Solucao />}></Route>
         <Route path="/fluxograma" element={<Fluxograma />}></Route>
+        <Route path="/faq" element={<FAQs />}></Route>
          <Route path="/*" element={<ErrorPage />}></Route>
       </Routes>
     </BrowserRouter>
