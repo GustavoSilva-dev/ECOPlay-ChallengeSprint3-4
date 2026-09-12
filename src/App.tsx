@@ -5,6 +5,7 @@ import Sobre from './pages/Sobre'
 import ErrorPage from './pages/ErrorPage'
 import QuemSomos from './pages/QuemSomos'
 import Solucao from './pages/Solucao'
+import Fluxograma from './pages/Fluxograma'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/sobre" element={<Sobre />}></Route>
         <Route path="/quem-somos" element={<QuemSomos />}></Route>
         <Route path="/solucao" element={<Solucao />}></Route>
+        <Route path="/fluxograma" element={<Fluxograma />}></Route>
          <Route path="/*" element={<ErrorPage />}></Route>
       </Routes>
     </BrowserRouter>
