@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import EcoplayPrototype from "../components/prototipo-structure/EcoplayPrototype";
 
 function Prototipo() {
     return (
@@ -29,21 +30,27 @@ function Prototipo() {
                             Informações do protótipo
                         </h2>
                         <p className="text-center text-[0.95rem] leading-[1.7]">
-                            Este espaço será utilizado para apresentar as informações,
-                            funcionalidades e orientações do protótipo da ECOPlay.
+                            O onboarding apresenta a jornada do jogador. Na Home,
+                            o usuário acompanha pontos, sequência, missão em destaque,
+                            guilda e lootboxes. As telas de Missões e Mapa simulam
+                            ações sustentáveis e check-ins em comércios parceiros.
+                            Guildas exibem ranking e metas coletivas, enquanto
+                            Recompensas mostram benefícios da SoulUp. Separamos em campos de conceitos <i>em validação</i> (que ainda estamos planejando se iremos implementar) e <i>dá para construir</i> (que estamos decididos a implementar)
+                            <br/>
+                            <br/>
+
+                            <b>*Pretendemos remodelar completamente esta página para a próxima sprint, ela não será mantida</b>
                         </p>
                     </section>
 
                     <section
                         aria-labelledby="prototype-title"
-                        className="content-fade-in flex min-h-100 w-full items-center justify-center rounded-2xl border-4 border-[#6B46C1] bg-white/40 p-8.5 min-[481px]:min-h-125 min-[481px]:p-10"
+                        className="content-fade-in w-full rounded-2xl border-4 border-[#6B46C1] bg-white/40 p-5 min-[481px]:p-7.5"
                     >
-                        <h2
-                            id="prototype-title"
-                            className="text-lg font-semibold text-[#6B46C1]"
-                        >
-                            Área reservada para o protótipo
+                        <h2 id="prototype-title" className="sr-only">
+                            Protótipo navegável da ECOPlay
                         </h2>
+                        <EcoplayPrototype />
                     </section>
                 </div>
             </main>

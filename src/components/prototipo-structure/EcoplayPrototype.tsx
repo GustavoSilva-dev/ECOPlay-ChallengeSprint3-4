@@ -1,29 +1,12 @@
 import { useState } from "react";
-
-type Screen = "home" | "missoes" | "mapa" | "guildas" | "recompensas";
-type LootboxRank = "comum" | "raro" | "lendario";
-type NoteStatus = "ok" | "concept" | "mixed";
-
-interface Mission {
-    icon: string;
-    title: string;
-    points: string;
-    tag: string;
-    action: string;
-}
-
-interface Note {
-    status: NoteStatus;
-    label: string;
-    title: string;
-    text: string;
-}
-
-interface RewardOutcome {
-    rarity: string;
-    color: string;
-    text: string;
-}
+import type {
+    LootboxRank,
+    Mission,
+    Note,
+    NoteStatus,
+    RewardOutcome,
+    Screen,
+} from "../../types/prototipo";
 
 const missions: Mission[] = [
     { icon: "🌱", title: "Plante ou cuide de uma muda no seu quintal", points: "+60 pontos", tag: "Foto · verificação do EcoBot", action: "Enviar prova" },
@@ -144,8 +127,8 @@ function EcoplayPrototype() {
                         {activeScreen === "onboarding" && (
                             <section className="flex h-full flex-col items-center justify-center px-6.5 text-center">
                                 <div className="mb-2.5 text-[3.2rem]">🌱</div>
-                                <div className="text-[2rem] font-black tracking-tight text-[#6B46C1]">
-                                    ECO<span className="text-[#38A169]">Play</span>
+                                <div className="text-[2rem] font-black font-['Nico_Moji',sans-serif] tracking-tight text-[#6B46C1]">
+                                    ECOPlay
                                 </div>
                                 <p className="my-2.5 mb-6.5 max-w-65 text-[0.85rem] leading-normal text-[#5A6B7F]">
                                     Toda atitude sustentável faz sua guilda crescer.
@@ -158,7 +141,7 @@ function EcoplayPrototype() {
                                 </button>
                                 {merchantNoteVisible && (
                                     <p className="mt-2.5 max-w-62.5 text-xs leading-normal text-[#5A6B7F]">
-                                        Fluxo do lojista é conceito para a próxima sprint — este protótipo foca a jornada do jogador.
+                                        Decidimos em manter o fluxo do lojista para a sprint 4, já focando em estruturar um MVP funcional full-stack, com autenticação, criptografia, hospedagem inicial, dashboard básica e mais. Decidimos estruturar esse protótipo focando na jornada do usuário comum, com missões sustentáveis e de comércio.
                                     </p>
                                 )}
                                 <div className="mt-7.5 rounded-full border border-[#DEE3D2] px-3 py-1 text-[0.68rem] text-[#5A6B7F]">
