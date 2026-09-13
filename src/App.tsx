@@ -9,6 +9,7 @@ import Fluxograma from './pages/Fluxograma'
 import Contato from './pages/Contato'
 import FAQs from './pages/FAQs'
 import Prototipo from './pages/Prototipo'
+import ContatoDinamico from './pages/ContatoDinamico'
 
 function App() {
 
@@ -21,9 +22,10 @@ function App() {
         <Route path="/solucao" element={<Solucao />}></Route>
         <Route path="/fluxograma" element={<Fluxograma />}></Route>
         <Route path="/contato" element={<Contato />}></Route>
+        <Route path="/quem-somos/:id" element={<ContatoDinamico />}></Route>
         <Route path="/faq" element={<FAQs />}></Route>
         <Route path="/prototipo" element={<Prototipo />}></Route>
-         <Route path="/*" element={<ErrorPage />}></Route>
+        <Route path="/*" element={<ErrorPage />}></Route>
       </Routes>
     </BrowserRouter>
   )

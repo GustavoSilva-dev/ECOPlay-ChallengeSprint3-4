@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -18,11 +19,11 @@ interface ContactFormData {
 }
 
 const members = [
-    { name: "Diogo Avelino", image: diogoImage },
-    { name: "Gustavo Silva", image: gustavoImage },
-    { name: "Edilson Condori", image: edilsonImage },
-    { name: "Brayan dos Santos", image: brayanImage },
-    { name: "Breno Henrique", image: brenoImage },
+    { id: "diogo", name: "Diogo Avelino", image: diogoImage },
+    { id: "gustavo", name: "Gustavo Silva", image: gustavoImage },
+    { id: "edilson", name: "Edilson Condori", image: edilsonImage },
+    { id: "brayan", name: "Brayan dos Santos", image: brayanImage },
+    { id: "breno", name: "Breno Henrique", image: brenoImage },
 ];
 
 function Contato() {
@@ -63,12 +64,13 @@ function Contato() {
                     <section className="content-fade-in flex w-full flex-col items-center text-center">
                         <div className="mb-3.75 flex items-center justify-center -space-x-2.5">
                             {members.map((member) => (
-                                <img
-                                    key={member.name}
-                                    src={member.image}
-                                    alt={member.name}
-                                    className="h-11.25 w-11.25 rounded-full border-2 border-white object-cover shadow-[0_4px_10px_rgba(0,0,0,0.1)] transition-transform duration-300 hover:z-10 hover:scale-110"
-                                />
+                                <Link key={member.name} to={`/contato/${member.id}`} aria-label={`Ver contato de ${member.name}`}>
+                                    <img
+                                        src={member.image}
+                                        alt={member.name}
+                                        className="h-11.25 w-11.25 rounded-full border-2 border-white object-cover shadow-[0_4px_10px_rgba(0,0,0,0.1)] transition-transform duration-300 hover:z-10 hover:scale-110"
+                                    />
+                                </Link>
                             ))}
                         </div>
 
