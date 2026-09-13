@@ -24,7 +24,7 @@ function ErrorPage() {
                     </p>
                     <Link
                         to="/"
-                        className="inline-flex items-center rounded-lg bg-white px-6 py-3 font-semibold text-[#323A99] no-underline shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#D9D9D9] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="inline-flex items-center rounded-lg bg-white px-6 py-3 font-semibold text-[#323A99] no-underline shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#D9D9D9]"
                     >
                         Voltar para a página inicial
                     </Link>

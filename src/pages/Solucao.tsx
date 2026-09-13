@@ -32,7 +32,7 @@ function Solucao() {
                             A ECOPlay é uma plataforma integrada de gamificação desenhada sob medida para o ecossistema SoulUp/Prospera. Nosso objetivo é transformar ações ecológicas isoladas em um hábito diário divertido, altamente competitivo e financeiramente recompensador.
                         </p>
                         <p className="text-justify text-[0.95rem] leading-[1.7] min-[769px]:text-[1.1rem]">
-                            Através de dinâmicas baseadas em geolocalização, dividimos as cidades em Guildas (bairros ou condomínios), estimulando o espírito de comunidade. No ecossistema ECOPlay, o usuário joga para ajudar o planeta, ganha prêmios individuais através de Lootboxes, compete em dinâmicas aceleradas de Pontos Privados (PV) e, ao final, converte seus esforços em descontos reais na conta de luz via Prospera ou em produtos no comércio da sua região.
+                            Através de dinâmicas baseadas em geolocalização, dividimos as cidades em guildas, estimulando o espírito de comunidade. No ecossistema ECOPlay, o usuário joga para ajudar o planeta, ganha prêmios individuais através de Lootboxes, compete em dinâmicas aceleradas de Pontos Privados (PV) e, ao final, converte seus esforços em descontos reais na conta de luz via Prospera ou em produtos no comércio da sua região.
                         </p>
                     </section>
 
@@ -63,7 +63,7 @@ function Solucao() {
                                     2. Motor de Gamificação e Banco de Dados Escalável
                                 </h3>
                                 <p className="mb-5 text-justify text-[0.95rem] leading-[1.7] min-[769px]:text-[1.05rem]">
-                                    <strong>O que faz:</strong> Controla a distribuição de pontos, atualização do ranking de Guildas em tempo real, lógica de distribuição de Lootboxes diárias e o sistema de corrida pelos Pontos Privados (PV).
+                                    <strong>O que faz:</strong> Controla a distribuição de pontos, atualização do ranking de Guildas em tempo real, lógica de distribuição de Lootboxes diárias e o sistema de recompensas.
                                 </p>
                                 <p className="text-justify text-[0.95rem] leading-[1.7] min-[769px]:text-[1.05rem]">
                                     <strong>Tecnologias:</strong> Banco de dados relacional e de alta performance <strong>(PostgreSQL/MySQL)</strong> gerenciado com máxima estabilidade através do <strong>Spring Data JPA</strong>.
