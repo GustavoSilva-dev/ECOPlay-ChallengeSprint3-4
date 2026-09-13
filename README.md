@@ -76,13 +76,14 @@ As ações sustentáveis realizadas pelos usuários poderão gerar pontuações 
 - TypeScript
 - Tailwind CSS
 - HTML
-- CSS
+- CSS (utilizado para criar animações dinâmicas)
 - JavaScript
 
 ## Hooks utilizados
 - useState
 - useEffect
 - useParams
+- useNavigate
 - useRef
 - useForm
 - useScrollReveal (hook personalizado para animar scroll)
