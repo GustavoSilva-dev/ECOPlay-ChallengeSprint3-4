@@ -46,7 +46,7 @@ function Sobre() {
                                     O coração da solução são as Guildas. Baseadas na localização geográfica dos usuários, elas estimulam a cooperação para atingir metas coletivas de sustentabilidade.
                                 </p>
                                 <p>
-                                    Para manter o dinamismo, estruturamos um fluxo de ranking mensal entre as guildas. Motivando os usuários a competirem e 
+                                    Para manter o dinamismo, estruturamos um fluxo de ranking mensal entre as guildas. Motivando os usuários a competirem e a realizarem atividades sustentáveis constantemente, afim de manter a competitivdade.
                                 </p>
                             </Card>
 
