@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router";
-import { PiPlantFill } from "react-icons/pi";
 
 function ErrorPage() {
     return (

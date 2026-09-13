@@ -3,7 +3,6 @@ import type {
     LootboxRank,
     Mission,
     Note,
-    NoteStatus,
     RewardOutcome,
     Screen,
 } from "../../types/prototipo";
