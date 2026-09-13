@@ -101,7 +101,7 @@ As ações sustentáveis realizadas pelos usuários poderão gerar pontuações 
 
 ## Ferramentas de Inteligência Artificial e Produtividade
 - Gemini
-- Github Copilot
+- Github Copilot <br/>
 **USADO PARA**: Acelerar fluxo de desenvolvimento de tarefas repetitivas e portabilidade para componente React, como funcionamento do ```IntersectionObserver``` para animar o scroll na animação.
 
 ---
@@ -211,7 +211,9 @@ O projeto utiliza uma identidade visual inspirada em:
 
 Este projeto está disponível publicamente no GitHub:
 
-**📌 [ECOPlay-ChallengeSprint3-4](https://github.com/GustavoSilva-dev/ECOPlay-ChallengeSprint3-4)**
+**📌 [ECOPlay-ChallengeSprint3-4](https://github.com/GustavoSilva-dev/ECOPlay-ChallengeSprint3-4)** <br/>
+**📌 [Site em Produção](https://eco-play-challenge.vercel.app/)** <br/>
+**📌 [Vídeo Apresentativo](https://www.youtube.com/watch?v=PwakcwTiz2E)**
 
 ---
 

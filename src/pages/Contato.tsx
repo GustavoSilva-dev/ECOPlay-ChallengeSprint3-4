@@ -64,7 +64,7 @@ function Contato() {
                     <section className="content-fade-in flex w-full flex-col items-center text-center">
                         <div className="mb-3.75 flex items-center justify-center -space-x-2.5">
                             {members.map((member) => (
-                                <Link key={member.name} to={`/contato/${member.id}`} aria-label={`Ver contato de ${member.name}`}>
+                                <Link key={member.name} to={`/quem-somos/${member.id}`} aria-label={`Ver contato de ${member.name}`}>
                                     <img
                                         src={member.image}
                                         alt={member.name}
