@@ -62,7 +62,7 @@ function Sobre() {
                                 </p>
                             </Card>
                         </div>
-                        <NextPageButton page="quem-somos" className="self-end" />
+                        <NextPageButton label="Conheça a equipe" page="quem-somos" className="self-end" />
                     </section>
                     
                 </div>

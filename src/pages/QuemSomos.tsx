@@ -115,7 +115,7 @@ function QuemSomos() {
                             </div>
                         </article>
                     ))}
-                    <NextPageButton page="solucao" className="self-end" />
+                    <NextPageButton label="Entenda mais a solução" page="solucao" className="self-end" />
                 </div>
             </main>
             <Footer />

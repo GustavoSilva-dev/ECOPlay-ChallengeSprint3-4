@@ -90,7 +90,7 @@ function Fluxograma() {
                             )}
                         </div>
                     ))}
-                    <NextPageButton page="contato" className="self-center mt-5" />
+                    <NextPageButton label="Entre em contato" page="contato" className="self-center mt-5" />
                 </section>
                 
             </main>

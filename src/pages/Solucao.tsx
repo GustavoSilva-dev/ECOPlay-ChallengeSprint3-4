@@ -101,7 +101,7 @@ function Solucao() {
                             A integração direta com os comerciantes parceiros resulta em uma validação mais precisa e rápida dos desafios, aumentando a confiança dos usuários e a eficiência operacional da plataforma.
                         </p>
                     </section>
-                    <NextPageButton page="fluxograma" className="self-end" />
+                    <NextPageButton label="Fluxograma do usuário" page="fluxograma" className="self-end" />
                 </div>
             </main>
             <Footer />
