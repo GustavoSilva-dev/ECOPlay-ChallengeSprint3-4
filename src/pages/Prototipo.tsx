@@ -35,7 +35,7 @@ function Prototipo() {
                             guilda e lootboxes. As telas de Missões e Mapa simulam
                             ações sustentáveis e check-ins em comércios parceiros.
                             Guildas exibem ranking e metas coletivas, enquanto
-                            Recompensas mostram benefícios da SoulUp. Separamos em campos de conceitos <i>em validação</i> (que ainda estamos planejando se iremos implementar) e <i>dá para construir</i> (que estamos decididos a implementar)
+                            Recompensas mostram benefícios da SoulUp. Separamos em campos <i>mostrar para conceito</i> (que ainda estamos planejando se iremos implementar) e <i>dá para construir</i> (que estamos decididos a implementar)
                             <br/>
                             <br/>
 

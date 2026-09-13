@@ -8,12 +8,14 @@ import diogoImage from "../assets/imagens/diogo.webp";
 import edilsonImage from "../assets/imagens/edilson.jpeg";
 import gustavoImage from "../assets/imagens/gustavo.jpeg";
 import NextPageButton from "../components/NextPageButton";
+import { Link } from "react-router";
 
 interface Member {
     name: string;
     image: string;
     linkedin: string;
     github: string;
+    rotaDinamica: string;
     linkedinLabel: string;
     githubLabel: string;
 }
@@ -24,6 +26,7 @@ const members: Member[] = [
         image: diogoImage,
         linkedin: "https://www.linkedin.com/in/diogo-avelino-da-silva-2148933b5/",
         github: "https://github.com/capitaomiau",
+        rotaDinamica: "/quem-somos/diogo",
         linkedinLabel: "diogo-avelino-da-silva",
         githubLabel: "capitaomiau",
     },
@@ -32,6 +35,7 @@ const members: Member[] = [
         image: gustavoImage,
         linkedin: "https://www.linkedin.com/in/gustavo-silva-23575638b/",
         github: "https://github.com/GustavoSilva-dev",
+        rotaDinamica: "/quem-somos/gustavo",
         linkedinLabel: "gustavo-silva",
         githubLabel: "GustavoSilva-dev",
     },
@@ -40,6 +44,7 @@ const members: Member[] = [
         image: edilsonImage,
         linkedin: "https://www.linkedin.com/in/edilson-condori/",
         github: "https://github.com/Edilson-Cm",
+        rotaDinamica: "/quem-somos/edilson",
         linkedinLabel: "edilson-condori",
         githubLabel: "Edilson-Cm",
     },
@@ -48,6 +53,7 @@ const members: Member[] = [
         image: brayanImage,
         linkedin: "https://www.linkedin.com/in/brayan-dos-santos-sousas/",
         github: "https://github.com/Brayan511",
+        rotaDinamica: "/quem-somos/brayan",
         linkedinLabel: "brayan-dos-santos-sousa",
         githubLabel: "Brayan511",
     },
@@ -56,6 +62,7 @@ const members: Member[] = [
         image: brenoImage,
         linkedin: "https://www.linkedin.com/in/breno-rocha-53a6523ba?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
         github: "https://github.com/BrenoRocha1",
+        rotaDinamica: "/quem-somos/breno",
         linkedinLabel: "breno-henrique-de-castro-rocha",
         githubLabel: "BrenoRocha1",
     },
@@ -99,7 +106,7 @@ function QuemSomos() {
                                         href={member.linkedin}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="inline-flex items-center rounded-lg bg-[#6B46C1] px-4 py-2 text-sm font-semibold text-white no-underline transition-all duration-300 hover:scale-105 hover:bg-[#51329B] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6B46C1]"
+                                        className="inline-flex items-center rounded-lg bg-[#6B46C1] px-4 py-2 text-sm font-semibold text-white no-underline transition-all duration-300 hover:scale-105 hover:bg-[#51329B]"
                                     >
                                         LinkedIn
                                     </a>
@@ -107,10 +114,17 @@ function QuemSomos() {
                                         href={member.github}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="inline-flex items-center rounded-lg bg-[#5360FF] px-4 py-2 text-sm font-semibold text-white no-underline transition-all duration-300 hover:scale-105 hover:bg-[#323A99] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5360FF]"
+                                        className="inline-flex items-center rounded-lg bg-[#5360FF] px-4 py-2 text-sm font-semibold text-white no-underline transition-all duration-300 hover:scale-105 hover:bg-[#323A99]"
                                     >
                                         GitHub
                                     </a>
+                                    <Link
+                                        to={member.rotaDinamica}
+                                        rel="noreferrer"
+                                        className="inline-flex items-center rounded-lg bg-[#2D9B67] px-4 py-2 text-sm font-semibold text-white no-underline transition-all duration-300 hover:scale-105 hover:bg-[#2D6B20]"
+                                    >
+                                        Conhecer contato (rota dinâmica)
+                                    </Link>
                                 </div>
                             </div>
                         </article>

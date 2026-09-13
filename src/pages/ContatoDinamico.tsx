@@ -92,7 +92,7 @@ function ContatoDinamico() {
 
     return (
         <div className="flex min-h-screen flex-col bg-[#D9D9D9] font-['Montserrat',sans-serif] text-[#2C3952]">
-            <Header activePage="Contato" />
+            <Header activePage="Quem Somos?" />
             <Hero
                 eyebrow="ECOPlay"
                 title={member.name}
