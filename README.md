@@ -4,15 +4,59 @@
 
 O ECOPlay é uma plataforma gamificada focada em sustentabilidade, criada para transformar ações ecológicas em experiências sociais interativas e recompensadoras.
 
-A proposta do projeto é unir conceitos de comunidades online, gamificação e sustentabilidade através de Guildas socioecológicas, permitindo que usuários realizem missões, acumulem pontos, participem de rankings, recebam lootboxes e troquem recompensas reais em estabelecimentos parceiros.
+A proposta do projeto é unir conceitos de comunidades online, gamificação e sustentabilidade através de Guildas socioecológicas, permitindo que usuários realizem missões, acumulem pontos, pa[...]
 
 O sistema busca aumentar o engajamento da plataforma Soul Up utilizando elementos inspirados em RPGs, comunidades geeks e sistemas competitivos modernos.
 
 ---
 
+# ⚙️ Instalação e dependências (Breve)
+
+Requisitos:
+
+- Node.js (recomendado >= 18)
+- npm, yarn ou pnpm
+
+Passos rápidos:
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/GustavoSilva-dev/ECOPlay-ChallengeSprint3-4.git
+cd ECOPlay-ChallengeSprint3-4
+```
+
+2. Instale as dependências (ex.: npm):
+
+```bash
+npm install
+```
+
+Alternativas: `yarn install` ou `pnpm install`.
+
+3. Executar em desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Principais scripts disponíveis (veja `package.json`):
+
+- `dev` — rodar em modo dev com Vite
+- `build` — compilar TypeScript e gerar build (tsc -b && vite build)
+- `lint` — rodar ESLint
+- `preview` — pré-visualizar build
+
+Observações:
+
+- Se ocorrerem problemas, remova `node_modules` e o arquivo de lock (`package-lock.json` / `yarn.lock` / `pnpm-lock.yaml`) e tente novamente.
+- O projeto usa TypeScript, React, Vite e Tailwind CSS conforme listado nas dependências do `package.json`.
+
+---
+
 # 🎯 Objetivo
 
-O principal objetivo do projeto é incentivar práticas sustentáveis através de mecânicas de gamificação social, criando uma experiência mais atrativa, competitiva e interativa para os usuários.
+O principal objetivo do projeto é incentivar práticas sustentáveis através de mecânicas de gamificação social, criando uma experiência mais atrativa, competitiva e interativa para os usuá[...]
 
 Além disso, o sistema busca:
 
@@ -102,7 +146,7 @@ As ações sustentáveis realizadas pelos usuários poderão gerar pontuações 
 ## Ferramentas de Inteligência Artificial e Produtividade
 - Gemini
 - Github Copilot <br/>
-**USADO PARA**: Acelerar fluxo de desenvolvimento de tarefas repetitivas e portabilidade para componente React, como funcionamento do ```IntersectionObserver``` para animar o scroll na animação.
+**USADO PARA**: Acelerar fluxo de desenvolvimento de tarefas repetitivas e portabilidade para componente React, como funcionamento do ```IntersectionObserver``` para animar o scroll na animação[...]
 
 ---
 
@@ -144,7 +188,7 @@ O projeto utiliza uma identidade visual inspirada em:
 │   ├── 📁 components
 │   │   └── 📁 prototipo-structure
 │   ├── 📁 hooks
-│   ├── 📁 pages
+│   │   ├── 📁 pages
 │   ├── 📁 types
 │   ├── 📄 App.css
 │   ├── 📄 App.tsx
@@ -203,7 +247,7 @@ O projeto utiliza uma identidade visual inspirada em:
 | **Gustavo Soares Silva** | RM573880 | Desenvolvedor | [gustavo-silva](https://www.linkedin.com/in/gustavo-silva-23575638b/) | [GustavoSilva-dev](https://github.com/GustavoSilva-dev) |
 | **Edilson Condori** | RM571464 | Desenvolvedor | [edilson-condori](https://www.linkedin.com/in/edilson-condori/) | [Edilson-Cm](https://github.com/Edilson-Cm) |
 | **Brayan dos Santos Sousa** | RM564317 | Desenvolvedor | [brayan-dos-santos-sousas](https://www.linkedin.com/in/brayan-dos-santos-sousa/) | [Brayan511](https://github.com/Brayan511) |
-| **Breno Henrique de Castro Rocha** | RM572922 | Desenvolvedor | [breno-henrique-de-castro-rocha](https://www.linkedin.com/in/breno-henrique-de-castro-rocha-79b24b24b/) | [BrenoRocha1](https://github.com/BrenoRocha1) |
+| **Breno Henrique de Castro Rocha** | RM572922 | Desenvolvedor | [breno-henrique-de-castro-rocha](https://www.linkedin.com/in/breno-henrique-de-castro-rocha-79b24b24b/) | [BrenoRocha1](https://g[...]
 
 ---
 
